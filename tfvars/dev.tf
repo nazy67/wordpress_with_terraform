@@ -15,7 +15,6 @@ instance_class = "db.t2.micro"
 skip_snapshot =  true
 # Launch template
 instance_type = "t2.micro"
-key_name      = "new-key"
 # Route 53
 zone_name = "nazydaisy.com."
 # Tags
