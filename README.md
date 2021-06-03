@@ -8,13 +8,15 @@
    - Domain Name
 
 ## Usage
-
+```
 git clone https://github.com/nazy67/wordpress_with_terraform.git
 
 terraform init
-terraform plan  -var-file=tfvars/dev.tf
-terraform apply -var-file=tfvars/dev.tf
 
+terraform plan  -var-file=tfvars/dev.tf
+
+terraform apply -var-file=tfvars/dev.tf
+```
 
 ## Resources
 
@@ -47,7 +49,6 @@ terraform apply -var-file=tfvars/dev.tf
 - DNS
   - Route 53
   - ACM Certificate
-
 
 ## Description
 
