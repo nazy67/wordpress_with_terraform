@@ -13,8 +13,9 @@ priv_cidr_subnet = ["10.0.11.0/24", "10.0.12.0/24", "10.0.13.0/24"]
 # RDS
 instance_class = "db.t2.micro"
 skip_snapshot =  true
-# Wordpress
+# Launch template
 instance_type = "t2.micro"
+key_name      = "new-key"
 # Route 53
 zone_name = "nazydaisy.com."
 # Tags

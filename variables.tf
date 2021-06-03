@@ -57,8 +57,12 @@ variable "skip_snapshot" {
   description = "skip snapshot if env is dev"
 }
 
-# Wordpress variables
+# Launch Template
 variable "instance_type" {
+  type = string
+}
+
+variable "key_name" {
   type = string
 }
 
@@ -68,7 +72,7 @@ variable "zone_name" {
   type        = string
 }
 
-# Tags variables
+# Tag variables
 variable "env" {
   type        = string
   description = "name of the environment"
