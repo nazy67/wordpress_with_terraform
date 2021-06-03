@@ -62,10 +62,6 @@ variable "instance_type" {
   type = string
 }
 
-variable "key_name" {
-  type = string
-}
-
 # Route 53 variables
 variable "zone_name" {
   description = "Name of route 53 zone"
