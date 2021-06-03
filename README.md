@@ -1,1 +1,1 @@
-# wordpress_with_terraform
+# Wordpress with Terraform
