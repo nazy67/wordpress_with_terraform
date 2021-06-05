@@ -53,3 +53,13 @@ terraform apply -var-file=tfvars/dev.tf
 ## Description
 
 ## Useful Links
+
+## Notes 
+
+The following  plugins are required to be installed and activated in the WordPress:
+```
+- JSM force ssl. (JSM's Force HTTP to HTTPS (SSL) – Simple, Safe, Reliable, and Fast!)
+
+- Simple 301 redirect. (Redirection)
+```
+These plugins helps you to make your application secure , without redirecting  your HTTP/80 listener to HTTPS/443.
