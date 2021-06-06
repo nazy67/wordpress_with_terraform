@@ -65,7 +65,7 @@ priv_cidr_subnet = ["10.0.11.0/24", "10.0.12.0/24", "10.0.13.0/24"]
 
 Our VPC is configured with `count` meta-argument with `index`, `element`, `lenght` functions and for tags `locals` with `merge` function. When we have similar (repeating) resources such as public/private subnets and public/private route table associations we can use count.index to avoid it duplicating. With one public/private subnet resource block we are able to provision three public/private subnets, same with Route table association (where 3 Public subnets associated with `Public-RT` attached to Internet Gateway, and 3 Private subnets associated with `Private-RT` which is attached to Nat Gateway).
 
-`Internet Gateway (IGW)` comes along to bring the Internet (o.o.o.o/o) which is created and attached to to VPC. For Private subnets Internet comes with `NAT Gateway` which will be sitting on Public subnet, an Elastic IP (EIP) also  created and attached to it. My `frontend` and `backend` will be sitting on Private subnets for security reasons, only access to to webserver will be form Bastion Host, which is sitting on a Public subnet. 
+`Internet Gateway (IGW)` comes around when we bring the Internet (o.o.o.o/o) which is created and attached to to VPC. For Private subnets Internet comes with `NAT Gateway` which will be sitting on Public subnet, an Elastic IP (EIP) also  created and attached to it. My `frontend` and `backend` will be sitting on Private subnets for security reasons, only access to to webserver will be form Bastion Host, which is sitting on a Public subnet. 
 
 #### Security groups:
 
